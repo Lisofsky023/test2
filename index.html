@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"></noscript>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"></noscript>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Кухни Марко</title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <main class="main">
+
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__logo">
+            <a href="./" class="header__logo-link">
+              <img src="./images/logo-marko-kitchen.svg" alt="marko-kitchen" class="header__logo-img" width="177px" height="54px">
+            </a>
+            <a href="https://yandex.com.ge/maps/-/CDqDrX-T" target="_blank" class="header__yandex-link">
+              <img src="./images/yandex-icon-map.svg" alt="icon-map-marko-kitchen" class="header__yandex-icon">
+              <div class="header__yandex-info">
+                <p class="header__yandex-title">Яндекс Карты</p>
+                <div class="header__yandex-raiting">
+                  <img src="./images/five-stars-raiting.svg" alt="five-stars-raiting-yandex" class="header__yandex-stars" width="86.44px" height="19.86px">
+                  <p class="header__yandex-number">5,0</p>
+                </div>
+                <p class="header__yandex-text">81 отзыв • 100 оценок</p>
+              </div>
+            </a>
+          </div>
+          <input type="checkbox" id="burger-checkbox" class="header__burger-checkbox">
+          <label for="burger-checkbox" class="header__burger-icon">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </label>
+          <div class="header__information">
+            <div class="header__address">
+              <p class="header__address-title">Производство кухонь на заказ</p>
+              <p class="header__address-info">Анапа, ул. Крылова, д. 27</p>
+            </div>
+            <div class="header__contacts">
+              <a href="https://api.whatsapp.com/send/?phone=79881354842&text&type=phone_number" target="_blank" class="header__contacts-link header__contacts-link--whatsapp">
+                <svg width="22" height="21" viewBox="0 0 22 21">
+                  <use xlink:href="./images/sprites.svg#whatsapp-icon" />
+                </svg>
+              </a>
+              <a href="https://tgrm.github.io/+79881354842" target="_blank" class="header__contacts-link header__contacts-link--telegram">
+                <svg width="21" height="18" viewBox="0 0 21 18">
+                  <use xlink:href="./images/sprites.svg#telegram-icon" />
+                </svg>
+              </a>
+              <a href="tel:+79883117788" class="header__contacts-phone">+7 (988)-311-77-88</a>
+            </div>
+            <button class="header__button" data-fancybox data-src="#hidden-content" href="javascript:;">Заказать звонок</button>
+          </div>
+        </div>
+      </header>
+
+      <div class="container main__container">
+        <h1 class="main__title slide-in-right">Изготовим роскошную дизайнерскую кухню</h1>
+        <div class="main__description">
+          <img src="./images/wallet-icon.svg" alt="wallet-icon" class="main__description-icon">
+          <p class="main__description-text">Цена на 12-24% ниже,
+            <span class="main__description-text-bottom">чем у посредников</span>
+          </p>
+        </div>
+        <div class="main__order">
+          <p class="main__order-info">Рассчитаем стоимость кухни-мечты</p>
+          <button class="main__order-button"  data-fancybox data-src="#hidden-content" href="javascript:">ЗАКАЗАТЬ РАСЧЁТ</button>
+          <img src="./images/arrow-icon.svg" class="main__order-arrow">
+        </div>
+        <ul class="main__list">
+          <li class="main__item">
+            <p class="main__item-text">Огромный выбор</br> бытовой техники</p>
+            <div class="main__item-circule"></div>
+          </li>
+          <li class="main__item">
+            <p class="main__item-text">Изысканный гарнитур</br> любого размера</p>
+            <div class="main__item-circule"></div>
+          </li>
+          <li class="main__item">
+            <p class="main__item-text">Выдающиеся</br> сорта древесины</p>
+            <div class="main__item-circule"></div>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <section class="advantages">
+      <img src="./images/кухня-марко.webp" alt="кухни-марко" class="advantages__image" width="420px" height="532px">
+      <div class="container advantages__container">
+        <div class="advantages__wrapper">
+          <h2 class="advantages__title">Наши преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__icon">
+                <img src="./images/дизайнерские-кухни-марко.svg" alt="кухни-в-сжатые-сроки" width="70px" height="70px">
+              </div>
+              <p class="advantages__text"><span>C 2000 г на рынке</span><br> наши кухни выбрали 10&nbsp;000+ семей</p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__icon">
+                <img src="./images/кухни-в-сжатые-сроки.svg" alt="кухни-на-заказ-марко" class="advantages__icon" width="70px" height="70px">
+              </div>
+              <p class="advantages__text"><span>Сжатые сроки</span><br> изготовление кухни от 20&nbsp;дней</p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__icon">
+                <img src="./images/кухни-марко-анапа.svg" alt="дизайнерские-кухни-марко" class="advantages__icon" width="70px" height="70px">
+              </div>
+              <p class="advantages__text"><span>Дизайн проект</span><br> бесплатно за 30 минут</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="works">
+      <div class="container works__container">
+        <h2 class="works__title">Посмотрите наши работы</h2>
+        <div class="works__wrapper">
+          <ul class="works__list works__list_first">
+            <li class="works__item">
+              <div class="works__trigger" tabindex="0">
+                <p class="works__select-text">ПЛАНИРОВКА</p>
+                <div class="works__svg-container" tabindex="0">
+                  <svg class="works__arrow-icon" width="21" height="9" viewBox="0 0 21 9" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5 8.5L0.540707 0.249998L20.4593 0.25L10.5 8.5Z" />
+                  </svg>
+                </div>
+              </div>
+              <ul class="works__checkbox-list">
+                <li class="works__checkbox-item">
+                  <input class="works__checkbox" type="checkbox" id="straight" name="straight" />
+                  <label class="works__label" for="straight">Прямые</label>
+                  <p class="works__count">100</p>
+                </li>
+                <li class="works__checkbox-item">
+                  <input class="works__checkbox" type="checkbox" id="corner" name="corner" />
+                  <label class="works__label" for="corner">Угловые</label>
+                  <p class="works__count">134</p>
+                </li>
+                <li class="works__checkbox-item">
+                  <input class="works__checkbox" type="checkbox" id="island" name="island" />
+                  <label class="works__label" for="island">С островом</label>
+                  <p class="works__count">250</p>
+                </li>
+                <li class="works__checkbox-item">
+                  <input class="works__checkbox" type="checkbox" id="three" name="three" />
+                  <label class="works__label" for="three">Трёхярусные</label>
+                  <p class="works__count">120</p>
+                </li>
+                <li class="works__checkbox-item">
+                  <input class="works__checkbox" type="checkbox" id="p-shaped" name="p-shaped" />
+                  <label class="works__label" for="p-shaped">П-образные</label>
+                  <p class="works__count">170</p>
+                </li>
+              </ul>
+            </li>
+            <li class="works__item">
+              <div class="works__trigger" tabindex="0">
+                <p class="works__select-text">СТИЛЬ КУХНИ</p>
+
+                <div class="works__svg-container" tabindex="0">
+                  <svg class="works__arrow-icon" width="21" height="9" viewBox="0 0 21 9" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5 8.5L0.540707 0.249998L20.4593 0.25L10.5 8.5Z" />
+                  </svg>
+                </div>
+              </div>
+              <ul class="works__checkbox-list">
+                <li class="works__checkbox-item">
+                  <input class="works__checkbox" type="checkbox" id="modern" name="modern" />
+                  <label class="works__label" for="modern">Современный</label>
+                  <p class="works__count">150</p>
+                </li>
+                <li class="works__checkbox-item">
+                  <input class="works__checkbox" type="checkbox" id="neoclassical" name="neoclassical" />
+                  <label class="works__label" for="neoclassical">Неоклассика</label>
+                  <p class="works__count">210</p>
+                </li>
+                <li class="works__checkbox-item">
+                  <input class="works__checkbox" type="checkbox" id="classical" name="classical" />
+                  <label class="works__label" for="classical">Классика</label>
+                  <p class="works__count">110</p>
+                </li>
+              </ul>
+            </li>
+            <li class="works__item">
+              <div class="works__trigger" tabindex="0">
+                <p class="works__select-text">ЦВЕТ</p>
+                <div class="works__svg-container" tabindex="0">
+                  <svg class="works__arrow-icon" width="21" height="9" viewBox="0 0 21 9" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5 8.5L0.540707 0.249998L20.4593 0.25L10.5 8.5Z" />
+                  </svg>
+                </div>
+              </div>
+              <ul class="works__checkbox-list works__checkbox-list-colors">
+                <li class="works__checkbox-item">
+                  <input class="works__checkbox" type="checkbox" id="modern" name="modern" />
+                  <span class="works__white"></span>
+                  <label class="works__label works__color" for="modern">Белый</label>
+                </li>
+                <li class="works__checkbox-item">
+                  <input class="works__checkbox" type="checkbox" id="neoclassical" name="neoclassical" />
+                  <span class="works__black"></span>
+                  <label class="works__label works__color" for="neoclassical">Чёрный</label>
+                </li>
+                <li class="works__checkbox-item">
+                  <input class="works__checkbox" type="checkbox" id="classical" name="classical" />
+                  <span class="works__red"></span>
+                  <label class="works__label works__color" for="classical">Красный</label>
+                </li>
+                <li class="works__checkbox-item">
+                  <input class="works__checkbox" type="checkbox" id="classical" name="classical" />
+                  <span class="works__green"></span>
+                  <label class="works__label works__color" for="classical">Зелёный</label>
+                </li>
+                <li class="works__checkbox-item">
+                  <input class="works__checkbox" type="checkbox" id="classical" name="classical" />
+                  <span class="works__yellow"></span>
+                  <label class="works__label works__color" for="classical">Жёлтый</label>
+                </li>
+                <li class="works__checkbox-item">
+                  <input class="works__checkbox" type="checkbox" id="classical" name="classical" />
+                  <span class="works__wood"></span>
+                  <label class="works__label works__color" for="classical">Дерево</label>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="works__list works__list_second">
+            <li class="works__item">
+              <button class="works__button works__button-enter">ПРИМЕНИТЬ</button>
+            </li>
+            <li class="works__item">
+              <button class="works__button">СБРОСИТЬ</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="works__cards">
+          <div class="works__card">
+            <div class="works__card-wrapper">
+              <h3 class="works__card-title">
+                Кухня 097 минимализм
+              </h3>
+              <p class="works__card-description">
+                Угловая белая кухня со столешницей под бетон.
+              </p>
+              <ul class="works__card-list">
+                <li class="works__card-item">
+                  <p class="works__card-item_bold">
+                    Эконом
+                  </p>
+                  <p class="works__card-item_normal">
+                    168 000 р.
+                  </p>
+                </li>
+                <li class="works__card-item">
+                  <p class="works__card-item_bold">
+                    Стандарт
+                  </p>
+                  <p class="works__card-item_normal">
+                    217 000 р.
+                  </p>
+                </li>
+                <li class="works__card-item">
+                  <p class="works__card-item_bold">
+                    Премиум
+                  </p>
+                  <p class="works__card-item_normal">
+                    270 000 р.
+                  </p>
+                </li>
+              </ul>
+              <p class="works__card-details">
+                <span>Длина кухни:</span> 4900 мм
+              </p>
+              <div class="works__card-btns">
+                <button class="works__card-btn_first">ПОДРОБНЕЕ</button>
+                <button class="works__card-btn_second" data-fancybox data-src="#hidden-content" href="javascript:">Расчет стоимости</button>
+              </div>
+            </div>
+
+            <div class="works__card-slider">
+              <div class="big-slider">
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+              </div>
+              <div class="small-slider">
+                <div class="pagination"></div>
+                <div class="small-slider__wrapper">
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухни-марко" width="59.63" height="52.89px">
+                  </div>
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухни-марко" width="59.63" height="52.89px">
+                  </div>
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухни-марко" width="59.63" height="52.89px">
+                  </div>
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухни-марко" width="59.63" height="52.89px">
+                  </div>
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухни-марко" width="59.63" height="52.89px">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="works__card">
+            <div class="works__card-wrapper">
+              <h3 class="works__card-title">
+                Кухня 097 минимализм
+              </h3>
+              <p class="works__card-description">
+                Угловая белая кухня со столешницей под бетон.
+              </p>
+              <ul class="works__card-list">
+                <li class="works__card-item">
+                  <p class="works__card-item_bold">
+                    Эконом
+                  </p>
+                  <p class="works__card-item_normal">
+                    168 000 р.
+                  </p>
+                </li>
+                <li class="works__card-item">
+                  <p class="works__card-item_bold">
+                    Стандарт
+                  </p>
+                  <p class="works__card-item_normal">
+                    217 000 р.
+                  </p>
+                </li>
+                <li class="works__card-item">
+                  <p class="works__card-item_bold">
+                    Премиум
+                  </p>
+                  <p class="works__card-item_normal">
+                    270 000 р.
+                  </p>
+                </li>
+              </ul>
+              <p class="works__card-details">
+                <span>Длина кухни:</span> 4900 мм
+              </p>
+              <div class="works__card-btns">
+                <button class="works__card-btn_first">ПОДРОБНЕЕ</button>
+                <button class="works__card-btn_second" data-fancybox data-src="#hidden-content" href="javascript:">Расчет стоимости</button>
+              </div>
+            </div>
+
+            <div class="works__card-slider">
+              <div class="big-slider">
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заwebp" width="284px" height="331.33px">
+                </div>
+              </div>
+              <div class="small-slider">
+                <div class="pagination"></div>
+                <div class="small-slider__wrapper">
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухни-марко" width="59.63" height="52.89px">
+                  </div>
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухни-марко" width="59.63" height="52.89px">
+                  </div>
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухни-марко" width="59.63" height="52.89px">
+                  </div>
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухни-марко" width="59.63" height="52.89px">
+                  </div>
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухни-марко" width="59.63" height="52.89px">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="works__card">
+            <div class="works__card-wrapper">
+              <h3 class="works__card-title">
+                Кухня 097 минимализм
+              </h3>
+              <p class="works__card-description">
+                Угловая белая кухня со столешницей под бетон.
+              </p>
+              <ul class="works__card-list">
+                <li class="works__card-item">
+                  <p class="works__card-item_bold">
+                    Эконом
+                  </p>
+                  <p class="works__card-item_normal">
+                    168 000 р.
+                  </p>
+                </li>
+                <li class="works__card-item">
+                  <p class="works__card-item_bold">
+                    Стандарт
+                  </p>
+                  <p class="works__card-item_normal">
+                    217 000 р.
+                  </p>
+                </li>
+                <li class="works__card-item">
+                  <p class="works__card-item_bold">
+                    Премиум
+                  </p>
+                  <p class="works__card-item_normal">
+                    270 000 р.
+                  </p>
+                </li>
+              </ul>
+              <p class="works__card-details">
+                <span>Длина кухни:</span> 4900 мм
+              </p>
+              <div class="works__card-btns">
+                <button class="works__card-btn_first">ПОДРОБНЕЕ</button>
+                <button class="works__card-btn_second" data-fancybox data-src="#hidden-content" href="javascript:">Расчет стоимости</button>
+              </div>
+            </div>
+
+            <div class="works__card-slider">
+              <div class="big-slider">
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+              </div>
+              <div class="small-slider">
+                <div class="pagination"></div>
+                <div class="small-slider__wrapper">
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухни-марко" width="59.63" height="52.89px">
+                  </div>
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухни-марко" width="59.63" height="52.89px">
+                  </div>
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухни-марко" width="59.63" height="52.89px">
+                  </div>
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухни-марко" width="59.63" height="52.89px">
+                  </div>
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухни-марwebp" width="59.63" height="52.89px">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="works__card">
+            <div class="works__card-wrapper">
+              <h3 class="works__card-title">
+                Кухня 097 минимализм
+              </h3>
+              <p class="works__card-description">
+                Угловая белая кухня со столешницей под бетон.
+              </p>
+              <ul class="works__card-list">
+                <li class="works__card-item">
+                  <p class="works__card-item_bold">
+                    Эконом
+                  </p>
+                  <p class="works__card-item_normal">
+                    168 000 р.
+                  </p>
+                </li>
+                <li class="works__card-item">
+                  <p class="works__card-item_bold">
+                    Стандарт
+                  </p>
+                  <p class="works__card-item_normal">
+                    217 000 р.
+                  </p>
+                </li>
+                <li class="works__card-item">
+                  <p class="works__card-item_bold">
+                    Премиум
+                  </p>
+                  <p class="works__card-item_normal">
+                    270 000 р.
+                  </p>
+                </li>
+              </ul>
+              <p class="works__card-details">
+                <span>Длина кухни:</span> 4900 мм
+              </p>
+              <div class="works__card-btns">
+                <button class="works__card-btn_first">ПОДРОБНЕЕ</button>
+                <button class="works__card-btn_second" data-fancybox data-src="#hidden-content" href="javascript:">Расчет стоимости</button>
+              </div>
+            </div>
+
+            <div class="works__card-slider">
+              <div class="big-slider">
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+                <div class="big-slider__item">
+                  <img class="" src="./images/кухня-марко-на-заказ.webp" alt="кухня-марко-на-заказ" width="284px" height="331.33px">
+                </div>
+              </div>
+              <div class="small-slider">
+                <div class="pagination"></div>
+                <div class="small-slider__wrapper">
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухня-марко-на-заказ" width="59.63" height="52.89px">
+                  </div>
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухня-марко-на-заказ" width="59.63" height="52.89px">
+                  </div>
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухня-марко-на-заказ" width="59.63" height="52.89px">
+                  </div>
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухня-марко-на-заказ" width="59.63" height="52.89px">
+                  </div>
+                  <div class="small-slider__item">
+                    <img class="lazyload" src="./images/превью-кухни-марко.webp" alt="кухня-марко-на-заказ" width="59.63" height="52.89px">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="modal" style="display: none;" id="hidden-content">
+      <h2 class="modal__title">Оставьте свой номер</h2>
+      <p class="modal__text">Наш специалист обязательно перезвонит в ближайшее время</p>
+      <form class="form" action="URL_ОБРАБОТЧИКА_ФОРМЫ" method="post">
+        <input class="form__name" type="text" name="name" placeholder="Ваше имя">
+        <input class="form__number" type="tel" name="phone" placeholder="+7" required>
+        <input class="form__send-btn header__button" type="submit" value="Отправить">
+    </form>
+    </div>
+  </div>
+  <script defer src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script defer src="./js/slick.min.js"></script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/animation.js"></script>
+  <script src="./js/mask.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
