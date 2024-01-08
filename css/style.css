@@ -1276,6 +1276,9 @@ input[type=checkbox]:checked:before {
   .container {
     padding: 1rem 1rem;
   }
+  .header__contacts-phone {
+    font-size: 12px;
+  }
   .main__title {
     font-size: 42px;
     line-height: 50px;
