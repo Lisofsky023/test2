@@ -1315,6 +1315,9 @@ input[type=checkbox]:checked:before {
     max-width: 100%;
     font-size: 20px;
   }
+  .works__button {
+    font-size: 12px;
+  }
   .works__title {
     margin-bottom: 20px;
     font-size: 25px;

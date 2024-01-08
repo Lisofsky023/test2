@@ -334,6 +334,11 @@
   }
 
   .works {
+
+    &__button {
+      font-size: 12px;
+    }
+    
     &__title {
       margin-bottom: 20px;
       font-size: 25px;
@@ -362,9 +367,6 @@
     }
 
     &__item {
-      &__button {
-        font-size: 12px;
-      }
       &:not(:last-child) {
         margin: 0 0 10px;
       }
