@@ -339,10 +339,6 @@
       font-size: 25px;
     }
 
-    &__button {
-      font-size: 12px;
-    }
-
     &__list {
       &_first {
         flex-direction: column;
@@ -366,6 +362,9 @@
     }
 
     &__item {
+      &__button {
+        font-size: 12px;
+      }
       &:not(:last-child) {
         margin: 0 0 10px;
       }
